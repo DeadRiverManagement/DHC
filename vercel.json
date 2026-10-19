@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/((?!assets/).+)",
-      "destination": "/",
-      "permanent": false
-    }
-  ]
-}

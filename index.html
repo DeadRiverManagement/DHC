@@ -1,122 +1,552 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXRD4PT4KF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GXRD4PT4KF');
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dynamic Heating &amp; Cooling | Website in for maintenance</title>
-<meta name="description" content="Dynamic Heating &amp; Cooling, Refrigeration in El Paso, TX. Our website is being rebuilt. Call (915) 751-9803 for heating and cooling service.">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+<title>El Paso HVAC Repair & Install | Dynamic Heating & Cooling</title>
+<meta name="description" content="El Paso's Trane Comfort Specialist. New Trane central systems, repairs for all makes and Mitsubishi ductless. Call Dynamic weekdays, 7am to 5pm.">
+<link rel="canonical" href="https://dynamicheatingcooling.net/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="El Paso HVAC Repair & Install | Dynamic Heating & Cooling">
+<meta property="og:description" content="El Paso's Trane Comfort Specialist. New Trane central systems, repairs for all makes and Mitsubishi ductless. Call Dynamic weekdays, 7am to 5pm.">
+<meta property="og:url" content="https://dynamicheatingcooling.net/">
+<meta property="og:image" content="https://dynamicheatingcooling.net/assets/photos/home-comfort-1571460.jpg">
+<meta property="og:image:alt" content="Bright living room with a neutral sofa and wooden staircase in an El Paso home">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
-<style>
-  :root{
-    --navy:#08208C; --navy-deep:#061761; --red:#EC1B22; --red-deep:#BF1218;
-    --ink:#1B2330; --body:#3C4655; --muted:#6B7686; --line:#DCE0E7; --wash:#F2F4F9; --paper:#FFFFFF;
-    --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
-    --font:"Open Sans","Segoe UI",Helvetica,Arial,sans-serif;
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="/assets/dhc.css?v=20260915-trane">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#08208C">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "@id": "https://dynamicheatingcooling.net/#business",
+  "name": "Dynamic Heating & Cooling, Refrigeration",
+  "url": "https://dynamicheatingcooling.net/",
+  "telephone": "+1-915-751-9803",
+  "foundingDate": "2003",
+  "founder": {
+    "@type": "Person",
+    "name": "Robert Vigil"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "8935 Gateway N Blvd #B4",
+    "addressLocality": "El Paso",
+    "addressRegion": "TX",
+    "postalCode": "79904",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:00",
+      "closes": "17:00"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "El Paso",
+      "addressRegion": "TX"
+    },
+    {
+      "@type": "City",
+      "name": "Horizon City",
+      "addressRegion": "TX"
+    },
+    {
+      "@type": "City",
+      "name": "Las Cruces",
+      "addressRegion": "NM"
+    },
+    {
+      "@type": "City",
+      "name": "Alamogordo",
+      "addressRegion": "NM"
+    }
+  ],
+  "hasCredential": [
+    "Texas HVAC licence TACLA18354C",
+    "New Mexico licence 353350",
+    "New Mexico licence 353356",
+    "Trane Comfort Specialist",
+    "Mitsubishi Diamond Contractor",
+    "NATE-certified technicians"
+  ],
+  "slogan": "HVAC Solutions you can Trust",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.6",
+    "reviewCount": "131"
   }
-  *,*::before,*::after{box-sizing:border-box}
-  html,body{margin:0;min-height:100%}
-  body{
-    font-family:var(--font);color:var(--body);background:var(--wash);
-    background-image:linear-gradient(rgba(8,32,140,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(8,32,140,.045) 1px,transparent 1px);
-    background-size:32px 32px;
-    display:flex;flex-direction:column;min-height:100vh;
-  }
-  .stripe{height:6px;background:linear-gradient(90deg,var(--red) 0 50%,var(--navy) 50% 100%)}
-  main{flex:1;display:grid;place-items:center;padding:40px 16px}
-  .panel{
-    width:100%;max-width:880px;background:var(--paper);border:1px solid var(--line);border-radius:10px;
-    box-shadow:0 2px 4px rgba(27,35,48,.06),0 18px 40px rgba(27,35,48,.08);
-    display:grid;grid-template-columns:1fr 320px;overflow:hidden;
-  }
-  .copy{padding:44px 44px 40px}
-  .logo{display:block;width:250px;max-width:100%;height:auto;margin:0 0 28px -8px}
-  .tag{
-    display:inline-flex;align-items:center;gap:8px;font:700 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;
-    color:var(--navy);background:#EEF1FA;border:1px solid #D3DAF0;border-radius:4px;padding:7px 10px;margin-bottom:18px;
-  }
-  .tag i{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 3px rgba(236,27,34,.18);animation:blink 2.4s ease-in-out infinite}
-  h1{font:800 clamp(30px,5vw,44px)/1.08 var(--font);color:var(--ink);margin:0 0 16px;letter-spacing:-.01em;text-wrap:balance}
-  h1 span{color:var(--red)}
-  p{font-size:17px;line-height:1.6;margin:0 0 24px;max-width:46ch}
-  .call{
-    display:inline-flex;align-items:center;gap:12px;background:var(--red);color:#fff;text-decoration:none;
-    font:800 20px/1 var(--font);padding:18px 24px;border-radius:8px;box-shadow:0 6px 16px rgba(236,27,34,.28);
-    transition:background-color .2s ease,transform .2s ease;
-  }
-  .call:hover{background:var(--red-deep);transform:translateY(-1px)}
-  .call:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
-  .call svg{flex:none}
-  .hours{margin:18px 0 0;font-size:14px;color:var(--muted)}
-  .hours b{color:var(--ink);font-weight:700}
-  .gaugebox{
-    background:var(--navy);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:32px 20px;
-    background-image:radial-gradient(circle at 50% 38%,rgba(255,255,255,.10),transparent 60%);
-  }
-  .gauge{width:230px;height:230px}
-  .gauge .needle{transform-origin:120px 120px;animation:sweep 7s ease-in-out infinite}
-  .readout{font:700 12px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;text-align:center;color:#C9D2F2}
-  .readout b{display:block;color:#fff;font-size:14px;white-space:nowrap}
-  footer{padding:20px 16px 28px;text-align:center;font-size:13px;color:var(--muted);line-height:1.6}
-  footer span{white-space:nowrap}
-  @keyframes sweep{0%,100%{transform:rotate(-58deg)}50%{transform:rotate(58deg)}}
-  @keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
-  @media (max-width:760px){
-    .panel{grid-template-columns:1fr}
-    .gaugebox{order:-1;padding:26px 16px 22px}
-    .gauge{width:180px;height:180px}
-    .copy{padding:30px 22px 32px}
-    .logo{width:210px;margin-bottom:20px}
-    .call{width:100%;justify-content:center}
-  }
-  @media (prefers-reduced-motion:reduce){
-    .gauge .needle{animation:none;transform:rotate(0deg)}
-    .tag i{animation:none}
-    .call{transition:none}
-  }
-</style>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What areas does Dynamic Heating & Cooling serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve El Paso and Horizon City, Texas, and Las Cruces and Alamogordo, New Mexico (including La Luz and Boles Acres). Call (915) 751-9803 Monday to Friday, 7am to 5pm Mountain Time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your technicians NATE-certified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our technicians are NATE-certified. We are also a Trane Comfort Specialist and a Mitsubishi Diamond Contractor, licensed in Texas (TACLA18354C) and New Mexico (353350 and 353356)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you convert swamp coolers to refrigerated air?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Refrigerated air conversion is a core El Paso job for us, including ductwork when needed and the roof patch where the old cooler sat — heating, cooling, roofing and insulation under one company."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are your service hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Monday to Friday, 7:00am–5:00pm Mountain Time. Closed Saturday and Sunday. We do not offer emergency or after-hours service. Call (915) 751-9803 to discuss the problem and appointment availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are you located in El Paso?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "8935 Gateway N Blvd #B4, El Paso, TX 79904. Call (915) 751-9803 weekdays 7am–5pm Mountain Time."
+      }
+    }
+  ]
+}
+</script>
 </head>
+
 <body>
-<div class="stripe" aria-hidden="true"></div>
-<main>
-  <section class="panel" aria-labelledby="title">
-    <div class="copy">
-      <img class="logo" src="/assets/dhc-logo.png" alt="Dynamic Heating &amp; Cooling, Refrigeration" width="447" height="447" style="aspect-ratio:447/160;object-fit:cover;object-position:50% 49%">
-      <div class="tag"><i aria-hidden="true"></i>Website under construction</div>
-      <h1 id="title">This site is in for <span>maintenance.</span></h1>
-      <p>We're rebuilding our website. In the meantime, if you need heating, cooling, or refrigeration service in El Paso, give us a call.</p>
-      <a class="call" href="tel:+19157519803">
-        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
-        (915) 751-9803
-      </a>
-      <p class="hours"><b>Monday to Friday, 7am to 5pm</b> Mountain Time</p>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="utility">
+  <div class="wrap">
+    <div class="utility-col">
+      <p class="utility-lbl utility-credential">Trane Comfort Specialist</p>
+      <a class="btn btn--red" href="/about-us/reviews">Read our reviews</a>
     </div>
-    <div class="gaugebox" aria-hidden="true">
-      <svg class="gauge" viewBox="0 0 240 240">
-        <circle cx="120" cy="120" r="108" fill="#0B2AA6" stroke="#fff" stroke-opacity=".25" stroke-width="2"/>
-        <circle cx="120" cy="120" r="96" fill="#fff"/>
-        <path d="M52 174 A84 84 0 0 1 104 38" fill="none" stroke="#08208C" stroke-width="12" stroke-linecap="round" opacity=".9"/>
-        <path d="M136 38 A84 84 0 0 1 188 174" fill="none" stroke="#EC1B22" stroke-width="12" stroke-linecap="round" opacity=".9"/>
-        <g stroke="#1B2330" stroke-width="2" stroke-linecap="round">
-          <line x1="120" y1="48" x2="120" y2="60"/><line x1="69" y1="69" x2="77" y2="77"/><line x1="171" y1="69" x2="163" y2="77"/>
-          <line x1="48" y1="120" x2="60" y2="120"/><line x1="192" y1="120" x2="180" y2="120"/>
-        </g>
-        <text x="70" y="150" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#08208C" text-anchor="middle">COOL</text>
-        <text x="170" y="150" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#EC1B22" text-anchor="middle">HEAT</text>
-        <g class="needle">
-          <line x1="120" y1="120" x2="120" y2="52" stroke="#1B2330" stroke-width="4" stroke-linecap="round"/>
-        </g>
-        <circle cx="120" cy="120" r="10" fill="#1B2330"/><circle cx="120" cy="120" r="4" fill="#fff"/>
-      </svg>
-      <div class="readout"><b>System check in progress</b>New site coming soon</div>
+    <a class="brandmark" href="/">
+      <img class="brandmark-logo" src="/assets/dhc-logo.png" alt="Dynamic Heating &amp; Cooling, Refrigeration" width="447" height="447" style="width:340px;max-width:100%;height:100px;margin:0 auto;object-fit:cover;object-position:50% 49%">
+      <span class="sub">Heating / Cooling, Refrigeration &amp; Roofing</span>
+    </a>
+    <div class="utility-col utility-col--right">
+      <p class="utility-lbl">Call us today</p>
+      <a class="tel" href="tel:+19157519803">(915)&nbsp;751-9803</a>
     </div>
-  </section>
+  </div>
+</div>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+      Menu <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <ul class="menu" id="primary-menu">
+      <li><a href="/">Home</a></li>
+      <li class="has-sub">
+        <a href="/systems">Heating and Cooling <svg class="caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0h10L5 6z"/></svg></a>
+        <ul class="submenu">
+          <li><a href="/ac-repair">AC Repair</a></li>
+          <li><a href="/ac-installation">AC Installation</a></li>
+          <li><a href="/furnace-installation-services-and-repair">Furnace Repair &amp; Heating</a></li>
+          <li><a href="/refrigerated-air-conversion-el-paso">Refrigerated Air Conversion</a></li>
+          <li><a href="/ductless-ac">Ductless Mini-Splits</a></li>
+          <li><a href="/maintenance">Maintenance Plans</a></li>
+          <li><a href="/commercial-hvac">Commercial HVAC</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="/home-services">Home Services <svg class="caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0h10L5 6z"/></svg></a>
+        <ul class="submenu">
+          <li><a href="/duct-cleaning">Air Duct Cleaning</a></li>
+          <li><a href="/indoor-air-quality">Indoor Air Quality</a></li>
+          <li><a href="/water-heaters-and-tankless">Water Heaters &amp; Tankless</a></li>
+          <li><a href="/blow-in-insulation">Blown-In Insulation</a></li>
+        </ul>
+      </li>
+      <li><a href="/roofing-services">Roofing</a></li>
+      <li><a href="/specials">Specials</a></li>
+      <li><a href="/financing">Financing</a></li>
+      <li><a href="/hvac-news">HVAC News</a></li>
+      <li class="has-sub">
+        <a href="/about-us">About <svg class="caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0h10L5 6z"/></svg></a>
+        <ul class="submenu">
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/about-us/meet-our-team">Meet Our Team</a></li>
+          <li><a href="/about-us/reviews">Customer Reviews</a></li>
+          <li><a href="/faqs">HVAC FAQs</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="/contact-us">Contact <svg class="caret" viewBox="0 0 10 6" aria-hidden="true"><path d="M0 0h10L5 6z"/></svg></a>
+        <ul class="submenu">
+          <li><a href="/contact-us">Contact Us</a></li>
+          <li><a href="/service-area">Service Area</a></li>
+          <li><a href="/service-area/air-conditioning-heating-el-paso-tx">El Paso, TX</a></li>
+          <li><a href="/service-area/air-conditioning-heating-las-cruces-nm">Las Cruces, NM</a></li>
+          <li><a href="/service-area/air-conditioning-heating-alamogordo-nm">Alamogordo, NM</a></li>
+          <li><a href="/service-area/air-conditioning-heating-horizon-tx">Horizon City, TX</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="/assets/photos/home-comfort-1571460.jpg" srcset="/assets/photos/home-comfort-1571460-640.jpg 640w, /assets/photos/home-comfort-1571460.jpg 1800w" sizes="100vw" width="1800" height="1157" alt="Bright living room with a neutral sofa and wooden staircase in an El Paso home" title="Bright living room with a neutral sofa and wooden staircase in an El Paso home" fetchpriority="high" decoding="async" style="object-position:50% 52%">
+  </div>
+  <div class="hero-inner">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="hero-credential">Your local Trane Comfort Specialist</p>
+        <h1>Dynamic Heating &amp; Cooling, Refrigeration in El Paso</h1>
+        <p class="lede">New Trane central systems. Repairs for all makes.
+          Mitsubishi ductless installations. <strong>Local service since 2003.</strong></p>
+        <p class="hero-area">Serving El Paso, Horizon City, Las Cruces and Alamogordo.</p>
+        <div class="btn-row">
+          <a class="btn btn--red" href="tel:+19157519803"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 2h3l2 5-2 1a10 10 0 005 5l1-2 5 2v3a2 2 0 01-2 2A16 16 0 012 4a2 2 0 012-2z"/></svg> Call (915) 751-9803</a>
+          <a class="btn btn--ghost-light" href="/contact-us">Request a visit</a>
+        </div>
+        <div class="hero-badges">
+          <span>NATE-certified</span><span>Mon&ndash;Fri, 7am&ndash;5pm Mountain</span>
+        </div>
+        <p class="hero-offer">Special financing available &nbsp;&middot;&nbsp; $45 off a service repair</p>
+      </div>
+      <div class="hero-trane"><span>Trane</span><strong>Comfort Specialist</strong><p>Installed by Dynamic.<br>Chosen for your home.</p><a href="/ac-installation">Explore installation &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap" style="padding:0">
+    <ul>
+      <li><a class="is-urgent" href="tel:+19157519803">Call for HVAC Service</a></li>
+      <li><a href="/furnace-installation-services-and-repair">Heating</a></li>
+      <li><a href="/ac-repair">Cooling</a></li>
+      <li><a href="/maintenance">Maintenance</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="read" style="margin:0 auto;text-align:center">
+      <p class="lede">When your air conditioner quits in the heat or your furnace will not
+        light on the first cold night, you need someone who answers. Dynamic Heating &amp;
+        Cooling, Refrigeration has served El&nbsp;Paso and Horizon City, TX and Las Cruces
+        and Alamogordo, NM since 2003. Our technicians are NATE-certified, we are a Trane
+        Comfort Specialist and a Mitsubishi Diamond Contractor, and we tell you what we
+        found before we touch anything.</p>
+      <hr class="rule">
+    </div>
+  </div>
+</section>
+
+<section class="section section--wash">
+  <div class="wrap">
+    <p class="eyebrow">Where we work</p>
+    <h2>Find the HVAC services we bring to your city</h2>
+    <div class="grid grid--4" style="margin-top:28px">
+      <a class="card card--link" href="/service-area/air-conditioning-heating-el-paso-tx"><h3>El Paso, TX</h3>
+        <p>Our home city and where our shop is. Repair, installation, refrigerated air
+          conversion across the metro, with weekday service from 7am to 5pm.</p>
+        <span class="more">El Paso HVAC &rsaquo;</span></a>
+      <a class="card card--link" href="/service-area/air-conditioning-heating-horizon-tx"><h3>Horizon City, TX</h3>
+        <p>Full heating and cooling service for Horizon City homes, run out of the same
+          El&nbsp;Paso shop and the same trucks.</p>
+        <span class="more">Horizon City HVAC &rsaquo;</span></a>
+      <a class="card card--link" href="/service-area/air-conditioning-heating-las-cruces-nm"><h3>Las Cruces, NM</h3>
+        <p>Licensed in New Mexico. Air conditioning, furnace service and installation
+          across Las Cruces and the Mesilla Valley.</p>
+        <span class="more">Las Cruces HVAC &rsaquo;</span></a>
+      <a class="card card--link" href="/service-area/air-conditioning-heating-alamogordo-nm"><h3>Alamogordo, NM</h3>
+        <p>Serving Alamogordo, La Luz and Boles Acres with the same technicians and the
+          same New Mexico licences.</p>
+        <span class="more">Alamogordo HVAC &rsaquo;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2>Heating, cooling and the home services around them</h2>
+    <p class="lede read">Each job has its own page with the detail. Every one of them is
+      available across El&nbsp;Paso and the surrounding areas.</p>
+    <div class="grid grid--3" style="margin-top:30px">
+      <a class="card card--link" href="/ac-repair"><h3>AC repair</h3>
+        <p>Every make and model, including refrigerated air systems, heat pumps and
+          evaporative coolers. Call Monday to Friday, 7am to 5pm Mountain Time.</p>
+        <span class="more">AC repair &rsaquo;</span></a>
+      <a class="card card--link" href="/ac-installation"><h3>AC installation</h3>
+        <p>We size the system for your house rather than working from a price sheet, and
+          we show you the options before you commit.</p>
+        <span class="more">AC installation &rsaquo;</span></a>
+      <a class="card card--link" href="/furnace-installation-services-and-repair"><h3>Furnace and heating</h3>
+        <p>El&nbsp;Paso winters are short, which is exactly why furnaces fail on the first
+          cold night after sitting idle since March.</p>
+        <span class="more">Furnace repair &rsaquo;</span></a>
+      <a class="card card--link" href="/refrigerated-air-conversion-el-paso"><h3>Refrigerated air conversion</h3>
+        <p>Moving a house off a swamp cooler is the biggest comfort decision most
+          El&nbsp;Paso homeowners make. We do the whole job, ducts included.</p>
+        <span class="more">Conversions &rsaquo;</span></a>
+      <a class="card card--link" href="/ductless-ac"><h3>Ductless mini-splits</h3>
+        <p>We are a Mitsubishi Diamond Contractor, which matters most in older homes and
+          additions with no ductwork.</p>
+        <span class="more">Mini-splits &rsaquo;</span></a>
+      <a class="card card--link" href="/maintenance"><h3>Maintenance plans</h3>
+        <p>Semi-annual tune-ups on refrigerated and evaporative systems, so the failure
+          happens on our visit instead of in July.</p>
+        <span class="more">Maintenance club &rsaquo;</span></a>
+      <a class="card card--link" href="/duct-cleaning"><h3>Air duct cleaning</h3>
+        <p>Desert dust does not stay outside. It settles in your ducts and comes back out
+          through your vents.</p>
+        <span class="more">Duct cleaning &rsaquo;</span></a>
+      <a class="card card--link" href="/water-heaters-and-tankless"><h3>Water heaters and tankless</h3>
+        <p>Conventional tanks and tankless units, repaired or replaced by the same
+          NATE-certified technicians.</p>
+        <span class="more">Water heaters &rsaquo;</span></a>
+      <a class="card card--link" href="/roofing-services"><h3>Roofing and insulation</h3>
+        <p>Roof repair, replacement and blown-in attic insulation. One licensed company for
+          the whole envelope of the house.</p>
+        <span class="more">Roofing &rsaquo;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--navy">
+  <div class="wrap">
+    <div class="layout layout--rev" style="align-items:center">
+      <div class="prose">
+        <p class="eyebrow eyebrow--light">Only from Dynamic</p>
+        <h2>The swamp cooler comes off. Who patches the roof?</h2>
+        <p class="lede" style="color:#D3DAF0">Converting an El&nbsp;Paso home from
+          evaporative to refrigerated air leaves an opening in the roof where the old
+          cooler sat. Most HVAC companies hand that part to somebody else and hope the
+          schedules line up.</p>
+        <p style="color:#C4CDEA">We do heating and cooling, roofing and insulation in
+          house, under one licence and one crew. The conversion, the roof patch and the
+          attic insulation happen on one job, on one schedule, with one company answering
+          for the result.</p>
+        <div class="btn-row" style="margin-top:24px">
+          <a class="btn btn--red" href="/refrigerated-air-conversion-el-paso">How a conversion works</a>
+        </div>
+      </div>
+      <div class="aside" style="position:static">
+        <figure class="service-photo service-photo--tall"><img src="/assets/photos/roof-service-15964928.jpg" srcset="/assets/photos/roof-service-15964928-640.jpg 640w, /assets/photos/roof-service-15964928.jpg 1400w" sizes="(max-width: 900px) calc(100vw - 40px), 780px" width="1400" height="933" alt="Workers repairing a tiled roof beneath a blue sky" loading="lazy" decoding="async" style="object-position:50% 55%"><figcaption>Roofing work.</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Why El Paso calls us</p>
+    <h2>Credentials that have to be earned and kept</h2>
+    <div class="grid grid--3" style="margin-top:30px">
+      <div class="feature"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5z"/></svg></span>
+        <div><h3>NATE-certified technicians</h3><p>North American Technician Excellence is the HVAC industry's own competence test. Our technicians hold it.</p></div></div>
+      <div class="feature"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1l9 4v6c0 5.2-3.7 9.6-9 12-5.3-2.4-9-6.8-9-12V5z"/></svg></span>
+        <div><h3>Licensed in Texas and New Mexico</h3><p>Texas TACLA18354C. New Mexico 353350 and 353356. Two states, properly licensed in both.</p></div></div>
+      <div class="feature"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5 1.4-1.4L9 14.2l9.6-9.6z"/></svg></span>
+        <div><h3>Trane Comfort Specialist</h3><p>A manufacturer credential with training and customer-satisfaction requirements attached, reviewed every year.</p></div></div>
+      <div class="feature"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg></span>
+        <div><h3>Mitsubishi Diamond Contractor</h3><p>The credential that matters on ductless mini-splits, and the reason we can back the install to the maker's standard.</p></div></div>
+      <div class="feature"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/></svg></span>
+        <div><h3>Here since 2003</h3><p>Same city, same trade, more than twenty years. BBB accredited since September 2014.</p></div></div>
+      <div class="feature"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 2h3l2 5-2 1a10 10 0 005 5l1-2 5 2v3a2 2 0 01-2 2A16 16 0 012 4a2 2 0 012-2z"/></svg></span>
+        <div><h3>Talk with our local team</h3><p>Call Monday to Friday, 7am to 5pm Mountain Time. We discuss the problem and confirm appointment availability with you.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--wash">
+  <div class="wrap">
+    <div class="layout" style="align-items:start">
+      <div class="aside" style="position:static">
+        <p class="eyebrow">No surprises</p>
+        <h2>How a service call works</h2>
+        <p>There are no surprises in how we work, and that is deliberate.</p>
+      </div>
+      <div class="prose">
+        <ol class="steps">
+          <li><span class="n" aria-hidden="true">1</span><div><h3>You call or send a message</h3><p>Tell us what the system is doing. We respond Monday to Friday, 7am to 5pm Mountain Time.</p></div></li>
+          <li><span class="n" aria-hidden="true">2</span><div><h3>We diagnose and explain what we found</h3><p>In plain language, before any work starts. If your system only needs a repair, that is what we will tell you.</p></div></li>
+          <li><span class="n" aria-hidden="true">3</span><div><h3>You decide, then we do the work</h3><p>Not the other way round.</p></div></li>
+          <li><span class="n" aria-hidden="true">4</span><div><h3>We test it before we leave</h3><p>And we tell you what to watch for.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="callband">
+  <div class="wrap">
+    <p>Call to schedule an appointment today</p>
+    <a class="tel" href="tel:+19157519803">(915)&nbsp;751-9803</a>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">4.6 stars from 131 Google reviews</p>
+    <h2>What our customers say</h2>
+    <div class="grid grid--3" style="margin-top:28px">
+      <blockquote class="card" style="margin:0"><p>&ldquo;Dynamic Heating and Cooling replaced my old beat-up evaporative cooler with a brand new one. The installation was spot on perfect, and they preserved the step-flashing and roof tiles in the process.&rdquo;</p><footer class="more" style="color:var(--muted)">PaperDogTube &middot; Google</footer></blockquote>
+      <blockquote class="card" style="margin:0"><p>&ldquo;Robert and his crew at Dynamic Heating and Cooling upgraded my home from old school heating and cooling to a single HVAC system, along with a new roof.&rdquo;</p><footer class="more" style="color:var(--muted)">Ed Monte &middot; Google</footer></blockquote>
+      <blockquote class="card" style="margin:0"><p>&ldquo;I am very happy with the service Dynamic Heating &amp; Cooling, Refrigeration provided. They were on time, courteous, and professional. They arrived exactly on the agreed upon day and time.&rdquo;</p><footer class="more" style="color:var(--muted)">Walt Basil &middot; Google</footer></blockquote>
+    </div>
+    <div class="btn-row" style="margin-top:26px">
+      <a class="btn btn--ghost" href="/about-us/reviews">Read more reviews</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--wash">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2>Questions El Paso homeowners ask us</h2>
+    <div class="faq" style="margin:24px 0 34px">
+      <details open>
+        <summary>What areas does Dynamic Heating & Cooling serve?</summary>
+        <div class="answer"><p>We serve El Paso and Horizon City, Texas, and Las Cruces and Alamogordo, New Mexico (including La Luz and Boles Acres). Call (915) 751-9803 Monday to Friday, 7am to 5pm Mountain Time.</p></div>
+      </details>
+      <details>
+        <summary>Are your technicians NATE-certified?</summary>
+        <div class="answer"><p>Yes. Our technicians are NATE-certified. We are also a Trane Comfort Specialist and a Mitsubishi Diamond Contractor, licensed in Texas (TACLA18354C) and New Mexico (353350 and 353356).</p></div>
+      </details>
+      <details>
+        <summary>Do you convert swamp coolers to refrigerated air?</summary>
+        <div class="answer"><p>Yes. Refrigerated air conversion is a core El Paso job for us, including ductwork when needed and the roof patch where the old cooler sat — heating, cooling, roofing and insulation under one company.</p></div>
+      </details>
+      <details>
+        <summary>What are your service hours?</summary>
+        <div class="answer"><p>Monday to Friday, 7:00am–5:00pm Mountain Time. Closed Saturday and Sunday. We do not offer emergency or after-hours service. Call (915) 751-9803 to discuss the problem and appointment availability.</p></div>
+      </details>
+      <details>
+        <summary>Where are you located in El Paso?</summary>
+        <div class="answer"><p>8935 Gateway N Blvd #B4, El Paso, TX 79904. Call (915) 751-9803 weekdays 7am–5pm Mountain Time.</p></div>
+      </details>
+    </div>
+    <p>Need a visit? See <a href="/ac-repair">AC repair</a>,
+      <a href="/refrigerated-air-conversion-el-paso">refrigerated air conversion</a>,
+      our <a href="/service-area/air-conditioning-heating-el-paso-tx">El Paso HVAC hub</a>, or
+      <a href="/contact-us">contact us</a>.</p>
+  </div>
+</section>
 </main>
-<footer>
-  <span>Dynamic Heating &amp; Cooling, Refrigeration</span> · <span>El Paso, Texas</span><br>
-  Licensed in Texas (<span>TACLA18354C</span>) and New Mexico (<span>353350 and 353356</span>)
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h2>Dynamic Heating &amp; Cooling</h2>
+        <a class="tel" href="tel:+19157519803">(915)&nbsp;751-9803</a>
+        <address>8935 Gateway N Blvd #B4<br>El Paso, TX 79904</address>
+        <p class="licenses">Monday to Friday, 7:00am&ndash;5:00pm<br>Mountain Time</p>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/dynamicheatingcooling/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 7h3V4h-3a4 4 0 00-4 4v2H7v3h2v7h3v-7h3l1-3h-4V8a1 1 0 011-1z"/></svg></a></li>
+          <li><a href="https://www.twitter.com/dynamichcr" target="_blank" rel="noopener" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h4.5l4 5.5L16 3h3l-6 7.8L21 21h-4.5l-4.3-5.9L7 21H4l6.4-8.3z"/></svg></a></li>
+          <li><a href="https://www.youtube.com/channel/UCjZ0m3hfV82pN6xSeCTG2qw" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4a2.5 2.5 0 00-1.8 1.8A26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15V9l5 3z"/></svg></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Heating &amp; cooling</h2>
+        <ul>
+          <li><a href="/ac-repair">AC repair</a></li>
+          <li><a href="/ac-installation">AC installation</a></li>
+          <li><a href="/furnace-installation-services-and-repair">Furnace repair</a></li>
+          <li><a href="/refrigerated-air-conversion-el-paso">Refrigerated air conversion</a></li>
+          <li><a href="/ductless-ac">Ductless mini-splits</a></li>
+          <li><a href="/maintenance">Maintenance plans</a></li>
+          <li><a href="/commercial-hvac">Commercial HVAC</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Home services</h2>
+        <ul>
+          <li><a href="/duct-cleaning">Air duct cleaning</a></li>
+          <li><a href="/indoor-air-quality">Indoor air quality</a></li>
+          <li><a href="/water-heaters-and-tankless">Water heaters &amp; tankless</a></li>
+          <li><a href="/blow-in-insulation">Blown-in insulation</a></li>
+          <li><a href="/roofing-services">Roofing services</a></li>
+        </ul>
+        <h2 style="margin-top:26px">Advice</h2>
+        <ul>
+          <li><a href="/blog/reasons-your-outdoor-ac-coil-keeps-freezing-over">Why your AC coil keeps freezing</a></li>
+          <li><a href="/blog/why-your-furnace-fails-in-the-first-cold-week">Why furnaces fail in the first cold week</a></li>
+          <li><a href="/blog/repair-or-replace-a-15-year-old-ac-in-el-paso">Repair or replace an aging AC</a></li>
+          <li><a href="/blog/desert-dust-and-your-ducts-el-paso">Desert dust and your ducts</a></li>
+          <li><a href="/hvac-news">All HVAC news &amp; tips</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Service area</h2>
+        <ul>
+          <li><a href="/service-area/air-conditioning-heating-el-paso-tx">El Paso, TX</a></li>
+          <li><a href="/service-area/air-conditioning-heating-horizon-tx">Horizon City, TX</a></li>
+          <li><a href="/service-area/air-conditioning-heating-las-cruces-nm">Las Cruces, NM</a></li>
+          <li><a href="/service-area/air-conditioning-heating-alamogordo-nm">Alamogordo, NM</a></li>
+          <li><a href="/service-area">All areas we serve</a></li>
+        </ul>
+        <p class="licenses">TX licence TACLA18354C<br>NM licences 353350 &amp; 353356</p>
+      </div>
+    </div>
+    <div class="legal">
+      <p>&copy; 2026 Dynamic Heating &amp; Cooling, Refrigeration. Serving El Paso since 2003.</p>
+      <p><a href="/privacy-statement-us">Privacy</a> &nbsp; <a href="/sitemap">Sitemap</a> &nbsp; <a href="/contact-us">Contact</a></p>
+      <p class="credit">Designed by <a href="https://deadrivermanagement.com" target="_blank" rel="noopener">Dead River Management</a></p>
+    </div>
+  </div>
 </footer>
+
+<div class="callbar">
+  <a href="tel:+19157519803"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 2h3l2 5-2 1a10 10 0 005 5l1-2 5 2v3a2 2 0 01-2 2A16 16 0 012 4a2 2 0 012-2z"/></svg> Call (915) 751-9803</a>
+</div>
+
+<script src="/assets/dhc.js" defer></script>
 </body>
 </html>
